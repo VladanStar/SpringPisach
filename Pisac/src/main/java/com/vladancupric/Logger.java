@@ -1,5 +1,7 @@
 package com.vladancupric;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Logger {
 	
 	private KonzolniPisac konzolniPisac;
@@ -20,10 +22,11 @@ public class Logger {
 	public FajlPisac getFajlPisac() {
 		return fajlPisac;
 	}
-	
+	@Autowired
 	public void setKonzolniPisac(KonzolniPisac konzolniPisac) {
 		this.konzolniPisac = konzolniPisac;
 	}
+	@Autowired
 	public void setFajlPisac(FajlPisac fajlPisac) {
 		this.fajlPisac = fajlPisac;
 	}

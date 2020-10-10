@@ -6,8 +6,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 
-	<bean id="logger" class="com.vladancupric.Logger"
-		autowire="byType">
+	<bean id="logger" class="com.vladancupric.Logger">
 	</bean>
 	<bean id="fajlPisac" class="com.vladancupric.FajlPisac"></bean>
 	<bean id="konzolniPisac" class="com.vladancupric.KonzolniPisac"
